@@ -36,7 +36,8 @@ public class LetterTransformator {
 					}	
 					template_line = template_line.substring(close_index+1, template_line.length());
 				}
-				template_line+="\n";
+				template_line+="\n"; // (in Linux)
+				//template_line+="\r\n"; // (in windows)
 				output.write(template_line.getBytes());
 			}
 		}
